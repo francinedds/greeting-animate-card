@@ -23,8 +23,10 @@ function App() {
 
   if (currentHour >= 5 && currentHour < 12) {
     greeting = 'Good morning!';
+    isDayTime = true;
   } else if (currentHour >= 12 && currentHour < 18) {
     greeting = 'Good afternoon!';
+    isDayTime = true;
   } else {
     greeting = 'Good evening!';
   }
