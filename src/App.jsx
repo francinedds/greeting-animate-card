@@ -18,9 +18,9 @@ function App() {
   const now = new Date();
   const currentHour = now.getHours();
 
-  const isDayTime = currentHour >= 5 && currentHour < 18;
-
   let greeting = '';
+  let isDayTime = false; 
+
   if (currentHour >= 5 && currentHour < 12) {
     greeting = 'Good morning!';
   } else if (currentHour >= 12 && currentHour < 18) {
